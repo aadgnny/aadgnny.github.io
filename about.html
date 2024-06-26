@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coordinate Image Selector</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!-- Output image -->
+    <div class="flex flex-col items-center">
+        <img id="coord-image" class="w-64 h-64 object-cover mb-4 border border-gray-300 rounded-lg" src="images/out256_00_00.jpg" alt="Coordinate-based Image" />
+
+        <!-- Inputs -->
+        <div class="input-container bg-white p-6 rounded-lg shadow-md">
+            <fieldset id="change-with-input" class="mb-4">
+                <div class="mb-2">
+                    <label for="x-changer" class="block text-gray-700 font-medium">X Coordinate</label>
+                    <input id="x-changer" class="image-input mt-1 p-2 border border-gray-300 rounded w-full" placeholder="Select X" value="00" />
+                </div>
+                <div>
+                    <label for="y-changer" class="block text-gray-700 font-medium">Y Coordinate</label>
+                    <input id="y-changer" class="image-input mt-1 p-2 border border-gray-300 rounded w-full" placeholder="Select Y" value="00" />
+                </div>
+            </fieldset>
+
+            <fieldset id="change-with-select" class="mb-4">
+                <div class="mb-2">
+                    <label for="x-coord" class="block text-gray-700 font-medium">X Coordinate Select</label>
+                    <select id="x-coord" class="coord-select mt-1 p-2 border border-gray-300 rounded w-full">
+                        <option value="00">Zeroth</option>
+                        <option value="01">First</option>
+                        <option value="02">Second</option>
+                        <option value="03">Third</option>
+                        <option value="04">Fourth</option>
+                        <option value="05">Fifth</option>
+                        <option value="06">Sixth</option>
+                        <option value="07">Seventh</option>
+                        <option value="08">Eighth</option>
+                        <option value="09">Ninth</option>
+                        <option value="10">Tenth</option>
+                        <option value="11">Eleventh</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="y-coord" class="block text-gray-700 font-medium">Y Coordinate Select</label>
+                    <select id="y-coord" class="coord-select mt-1 p-2 border border-gray-300 rounded w-full">
+                        <option value="00">Zeroth</option>
+                        <option value="01">First</option>
+                        <option value="02">Second</option>
+                        <option value="03">Third</option>
+                        <option value="04">Fourth</option>
+                        <option value="05">Fifth</option>
+                        <option value="06">Sixth</option>
+                        <option value="07">Seventh</option>
+                        <option value="08">Eighth</option>
+                        <option value="09">Ninth</option>
+                        <option value="10">Tenth</option>
+                        <option value="11">Eleventh</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <button id="image-changer" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Change image</button>
+        </div>
+    </div>
+
+    <!-- Script tag -->
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
