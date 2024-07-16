@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lalezar', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 33.33%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .top-text, .sidebar .bottom-text {
+    flex: 1;
+}
+
+.sidebar .top-text {
+    width: 66.66%; 
+    align-self: flex-end; 
+    justify-content: flex-start;
+    text-align: right; 
+}
+
+.sidebar .bottom-text {
+    width: 33.33%; 
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 60px; 
+}
+
+.sidebar h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sidebar p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    transition: font-size 0.3s;
+}
+
+.sidebar ul li a:hover {
+    font-size: 50px;
+}
+
+.content {
+    width: 66.67%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
