@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+    <link rel="stylesheet" href="planstyles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+
+            <div class="top-text">
+                <h1>PLANS</h1>
+
+            </div>
+
+
+            <div>
+                <ul class="bottom-text">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#model">3D MODEL</a></li>
+                    <li><a href="#plans">PLANS</a></li>
+                    <li><a href="#section">SECTION</a></li>
+                    <li><a href="#details">DETAILS</a></li>
+                    <li><a href="#video">VIDEO</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="slider">
+            <button class="slider-button" id="prev">&#8249;</button>
+            <div class="slides-container">
+                <img src="image/2GA_Trummer_FA22_FIN_Gong_Yunjun_Wu_Danyang_RN_01.png" alt="Plan 1" class="slide">
+                <img src="image/2GA_Trummer_FA22_FIN_Gong_Yunjun_Wu_Danyang_RN_02.png" alt="Plan 2" class="slide">
+                <img src="image/2GA_Trummer_FA22_FIN_Gong_Yunjun_Wu_Danyang_RN_03.png" alt="Plan 3" class="slide">
+                <img src="image/5f final 1.png" alt="Plan 4" class="slide">
+                <img src="image/roof 1.png" alt="Plan 5" class="slide">
+            </div>
+            <button class="slider-button" id="next">&#8250;</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const slidesContainer = document.querySelector('.slides-container');
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlidesPosition();
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlidesPosition();
+        });
+
+        function updateSlidesPosition() {
+            slidesContainer.style.transform = `translateX(-${currentSlide * 100 / 3}%)`;
+        }
+    </script>
+</body>
+
+</html>
