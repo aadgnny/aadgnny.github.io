@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lalezar', sans-serif;
     display: flex;
     margin: 0;
     height: 100vh;
@@ -74,6 +76,7 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 300%;
+    z-index: -1;
 }
 
 .slider img {
