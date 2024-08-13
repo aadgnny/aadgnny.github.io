@@ -58,11 +58,13 @@ body {
 }
 
 
+
 .main-content {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
+    align-items: center; 
     justify-content: center;
-    align-items: center;
 }
 
 .slider {
@@ -89,4 +91,12 @@ body {
     border: none;
     font-size: 2em;
     cursor: pointer;
+}
+
+.slider-description {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    max-width: 80%;
 }

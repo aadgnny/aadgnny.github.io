@@ -68,10 +68,13 @@ body {
     overflow: auto;
 }
 
+
+
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     margin: 10px 0;
 }
@@ -79,4 +82,17 @@ body {
 video {
     max-width: 90%;
     max-height: 90%;
+}
+
+iframe {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.slider-description {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    max-width: 80%;
 }
