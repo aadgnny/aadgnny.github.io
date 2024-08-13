@@ -80,9 +80,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .content img {
     width: 100%;
     height: auto;
+}
+
+.slider-description {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    max-width: 80%;
 }
